@@ -3,4 +3,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения. 
 
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://FastTra1n.github.io/ИМЯ_РЕПОЗИТОРИЯ/)
+- [Публичная страница на GitHub Pages](https://fasttra1n.github.io/my-awesome-project/)
