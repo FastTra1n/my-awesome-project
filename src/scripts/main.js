@@ -43,9 +43,9 @@ form?.addEventListener('submit', (e) => {
         form.reportValidity(); // Показать браузерные подсказки
 
         // Подсветка проблемных полей 
-        [...form.elements].forEach(el => { 
-            if (el.willValidate) el.toggleAttribute('aria-invalid', 
-            !el.checkValidity()); 
+        [...form.elements].forEach(el => {
+            el.setAttribute("aria-invalid", "true");
+            if (el.willValidate) el.toggleAttribute('aria-invalid', !el.checkValidity()); 
         }); 
         return; 
     }
