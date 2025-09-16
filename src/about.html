@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">SiteFactory</a>
+    <header class="header">
+        <a href="../index.html" class="header__logo">SiteFactory</a>
         <!-- Главное меню навигации -->
-         <nav>
-            <ul>
+         <nav class="header-nav">
+            <ul class="header-nav__list">
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -30,28 +30,28 @@
          </nav>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="../index.html">Главная</a> >
-            <span>О нас</span>
+        <nav aria-label="Хлебные крошки" class="breadcrumbs">
+            <a href="../index.html" class="breadcrumbs__home">Главная</a> >
+            <span class="breadcrumbs__current">О нас</span>
         </nav>
 
-        <h1>О нашей компании</h1>
-        <section>
-            <h2>Наша история</h2>
-            <p>Текст о том, как все начиналось...</p>
+        <h1 class="main__title">О нашей компании</h1>
+        <section class="history">
+            <h2 class="history__title">Наша история</h2>
+            <p class="history__desc">Текст о том, как все начиналось...</p>
             
         </section>
-        <section>
-            <h2>Наша команда</h2>
-            <p>Текст о команде...</p>
+        <section class="team">
+            <h2 class="team__title">Наша команда</h2>
+            <p class="team__desc">Текст о команде...</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 SiteFactory. Все права защищены.</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
+        <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
     </footer>
 </body>
 </html>
