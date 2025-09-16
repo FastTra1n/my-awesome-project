@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">SiteFactory</a>
+    <header class="header">
+        <a href="../index.html" class="header__logo">SiteFactory</a>
         <!-- Главное меню навигации -->
-         <nav>
-            <ul>
+         <nav class="header-nav">
+            <ul class="header-nav__list">
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -30,33 +30,35 @@
          </nav>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="../index.html">Главная</a> >
-            <span>Контакты</span>
+        <nav aria-label="Хлебные крошки" class="breadcrumbs">
+            <a href="../index.html" class="breadcrumbs__home">Главная</a> >
+            <span class="breadcrumbs__current">Контакты</span>
         </nav>
 
-        <h1>Контакты для вопросов</h1>
-        <section>
+        <h1 class="main__title">Наши контакты</h1>
+
+        <h2 class="main__qcontacts">Контакты для вопросов</h2>
+        <section class="questions-contacts">
             <p>Менеджер по вопросам #1 - 7 (732) 408-00-93</p>
             <p>Менеджер по вопросам #2 - 7 (941) 227-75-87</p>
         </section>
-        <h1>Контакты для предложений</h1>
-        <section>
+        <h2 class="main__scontacts">Контакты для предложений</h2>
+        <section class="suggestions-contacts">
             <p>Менеджер по предложениям - 7 (390) 184-28-78</p>
         </section>
-        <h1>Контакты для предложений</h1>
+
         <h1>Хотите оставить отзыв?</h1>
-        <section>
-            <a href="feedback.html">Напишите нам на почту!</a>
-            <p>Мы рады любой обратной связи!</p>
+        <section class="feedback-contacts">
+            <a href="feedback.html" class="feedback-contacts__link">Напишите нам на почту!</a>
+            <p class="feedback-contacts__desc">Мы рады любой обратной связи!</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 SiteFactory. Все права защищены.</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
+        <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
     </footer>
 </body>
 </html>

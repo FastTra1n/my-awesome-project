@@ -1,7 +1,7 @@
-const dlg = document.getElementById('contactDialog');
-const openBtn = document.getElementById('openDialog');
-const closeBtn = document.getElementById('closeDialog');
-const form = document.getElementById('contactForm');
+const dlg = document.getElementById('contact-dialog');
+const openBtn = document.getElementById('feedback__open-dialog');
+const closeBtn = document.getElementById('form-actions__close-dialog');
+const form = document.getElementById('contact-form');
 const phone = document.getElementById('phone'); 
 let lastActive = null;
 
@@ -52,7 +52,7 @@ form?.addEventListener('submit', (e) => {
 
     // Успешная отправка формы
     e.preventDefault();
-    document.getElementById('contactDialog')?.close('success');
+    document.getElementById('contact-form')?.close('success');
     form.reset();
 });
 

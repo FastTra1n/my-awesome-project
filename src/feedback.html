@@ -18,11 +18,11 @@
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="../index.html">SiteFactory</a>
+    <header class="header">
+        <a href="../index.html" class="header__logo">SiteFactory</a>
         <!-- Главное меню навигации -->
-         <nav>
-            <ul>
+         <nav class="header-nav">
+            <ul class="header-nav__list">
                 <li><a href="../index.html">Главная</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -31,25 +31,25 @@
          </nav>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="../index.html">Главная</a> >
-            <span>Обратная связь</span>
+        <nav aria-label="Хлебные крошки" class="breadcrumbs">
+            <a href="../index.html" class="breadcrumbs__home">Главная</a> >
+            <span class="breadcrumbs__current">Обратная связь</span>
         </nav>
 
-        <section>
-            <h1>Оставьте свой отзыв</h1>
-            <p>Если Вы хотите оставить отзыв о нашем сервисе или у Вас возникли вопросы/жалобы, нажмите кнопку ниже для того, чтобы открыть отдельное окно с формой.</p>
+        <section class="feedback">
+            <h1 class="feedback__title">Оставьте свой отзыв</h1>
+            <p class="feedback__desc">Если Вы хотите оставить отзыв о нашем сервисе или у Вас возникли вопросы/жалобы, нажмите кнопку ниже для того, чтобы открыть отдельное окно с формой.</p>
             
             <!-- Кнопка открытия модалки --> 
-            <button id="openDialog" type="button">Написать нам</button> 
+            <button id="feedback__open-dialog" type="button">Написать нам</button> 
 
             <!-- Модалка с формой -->
-             <dialog id="contactDialog" aria-labelledby="dialogTitle">
-                <h2 id="dialogTitle">Обратная связь</h2> 
+             <dialog id="contact-dialog" aria-labelledby="dialogTitle">
+                <h2 id="contact-dialog__title">Обратная связь</h2> 
 
-                <form id="contactForm" method="dialog" novalidate>
+                <form id="contact-form" method="dialog" novalidate>
                     <label for="name">Ваше имя:</label>
                     <input type="text" id="name" name="name" required minlength="2" autocomplete="given-name">
 
@@ -77,7 +77,7 @@
                     <textarea id="message" name="message" rows="4" required></textarea>
 
                     <div class="form-actions">
-                        <button type="button" id="closeDialog">Закрыть</button>
+                        <button type="button" id="form-actions__close-dialog">Закрыть</button>
                         <button type="submit">Отправить</button> 
                     </div>
                 </form>
@@ -85,9 +85,9 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 SiteFactory. Все права защищены.</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
+        <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
     </footer>
 </body>
 </html>

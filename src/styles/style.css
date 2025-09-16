@@ -101,7 +101,7 @@ button, [type="submit"] {
     cursor: pointer; 
 }
 
-#closeDialog {
+#form-actions__close-dialog {
     margin: 10px 0px;
 }
 
