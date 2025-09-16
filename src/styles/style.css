@@ -144,3 +144,34 @@ img, video{
 button, input, select, textarea{
     font: inherit;
 } 
+
+.header__logo {
+    color: var(--color-fg);
+    text-decoration: none;
+}
+
+.header-nav__list {
+    width: 500px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__list li{
+    list-style: none;
+}
+
+.header-nav__list a{
+    color: var(--color-fg);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.header-nav__list a:hover{
+    color: var(--color-primary);
+}
+
+.breadcrumbs__home {
+    color: var(--color-fg);
+    text-decoration: none;
+}
