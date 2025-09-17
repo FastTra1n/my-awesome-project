@@ -145,16 +145,22 @@ button, input, select, textarea{
     font: inherit;
 } 
 
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header__logo {
     color: var(--color-fg);
     text-decoration: none;
 }
 
 .header-nav__list {
-    width: 500px;
-    padding: 0px;
     display: flex;
     justify-content: space-between;
+    width: 500px;
+    padding: 0px;
 }
 
 .header-nav__list li{
