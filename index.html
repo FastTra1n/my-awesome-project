@@ -19,47 +19,53 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <a href="#" class="header__logo">SiteFactory</a>
-        <!-- Главное меню навигации -->
-         <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="src/about.html">О нас</a></li>
-                <li><a href="src/contacts.html">Контакты</a></li>
-                <li><a href="src/feedback.html">Обратная связь</a></li>
-            </ul>
-         </nav>
+        <div class="container">
+            <a href="#" class="header__logo">SiteFactory</a>
+            <!-- Главное меню навигации -->
+            <nav class="header-nav">
+               <ul class="header-nav__list">
+                   <li><a href="index.html">Главная</a></li>
+                   <li><a href="src/about.html">О нас</a></li>
+                   <li><a href="src/contacts.html">Контакты</a></li>
+                   <li><a href="src/feedback.html">Обратная связь</a></li>
+               </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Уникальное основное содержимое страницы -->
     <main class="main">
-        <h1 class="main__title">Добро пожаловать на наш сайт!</h1>
+        <div class="container">
+            <h1 class="main__title">Добро пожаловать на наш сайт!</h1>
 
-        <!-- Секция 1 с якорем -->
-        <section class="services">
-            <h2 class="services__title">Наши услуги</h2>
-            <p class="services__desc">Мы предоставляем услуги разработки сайтов с полного нуля до развёртки сайта с использованием самых современных технологий.</p>
-            <a href="#contacts" class="services__link">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
-        </section>
+            <!-- Секция 1 с якорем -->
+            <section class="services">
+                <h2 class="services__title">Наши услуги</h2>
+                <p class="services__desc">Мы предоставляем услуги разработки сайтов с полного нуля до развёртки сайта с использованием самых современных технологий.</p>
+                <a href="#contacts" class="services__link">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
+            </section>
 
-        <!-- Секция 2 с якорем -->
-        <section class="portfolio">
-            <h2 class="portfolio__title">Портфолио</h2>
-            <p class="portfolio__desc">Здесь примеры наших работ...</p>
-        </section>
+            <!-- Секция 2 с якорем -->
+            <section class="portfolio">
+                <h2 class="portfolio__title">Портфолио</h2>
+                <p class="portfolio__desc">Здесь примеры наших работ...</p>
+            </section>
 
-        <!-- Секция 3 с якорем -->
-        <section class="contacts">
-            <h2 class="contacts__title">Контактная информация</h2>
-            <p class="contacts__desc">Наши контакты...</p>
-            <a href="src/contacts.html" class="contacts__link">Подробнее</a> <!-- Ссылка на отдельную страницу -->
-        </section>
+            <!-- Секция 3 с якорем -->
+            <section class="contacts">
+                <h2 class="contacts__title">Контактная информация</h2>
+                <p class="contacts__desc">Наши контакты...</p>
+                <a href="src/contacts.html" class="contacts__link">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+            </section>
+        </div>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="footer">
-        <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
-        <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
+        <div class="container">
+            <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
+            <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
+        </div>
     </footer>
 </body>
 </html>
