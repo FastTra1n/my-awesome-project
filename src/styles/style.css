@@ -181,3 +181,9 @@ button, input, select, textarea{
     color: var(--color-fg);
     text-decoration: none;
 }
+
+main {
+    padding: 10px;
+    background: linear-gradient(rgb(241, 241, 241), rgb(182, 182, 182));
+    border: 1px solid var(--color-fg);
+}
