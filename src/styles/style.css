@@ -187,3 +187,27 @@ main {
     background: linear-gradient(rgb(241, 241, 241), rgb(182, 182, 182));
     border: 1px solid var(--color-fg);
 }
+
+.main__contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "questions suggestions"
+                         "order partners";
+}
+
+.questions-contacts {
+    grid-area: questions;
+}
+
+.suggestions-contacts {
+    grid-area: suggestions;
+}
+
+.order-contacts {
+    grid-area: order;
+}
+
+.partners-contacts {
+    grid-area: partners;
+}
