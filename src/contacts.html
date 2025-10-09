@@ -43,9 +43,11 @@
     <main class="main">
         <div class="container">
             <!-- Простые "хлебные крошки" -->
-            <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                <a href="../index.html" class="breadcrumbs__home">Главная</a> >
-                <span class="breadcrumbs__current">Контакты</span>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
             </nav>
 
             <h1 class="main__title">Наши контакты</h1>
