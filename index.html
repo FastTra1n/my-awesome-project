@@ -15,6 +15,7 @@
     <meta property="og:image" content="https://avatars.mds.yandex.net/get-ydo/2426891/2a0000016e86f9a4690412cade1e654d6a72/diploma">
     <!-- Подключение стилей и скриптов -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -54,23 +55,50 @@
             </section>
 
             <!-- Секция 2 с якорем -->
-            <section class="mt-5">
-                <h2 class="portfolio__title">Портфолио</h2>
-                <p class="portfolio__desc">Примеры наших работ:</p>
-                <img src="./src/img/portfolio_400w.jpg" alt="portfolio1" class="portfolio__image">
+            <section class="text-center bg-body-emphasis mt-5">
+                <h1>Портфолио</h1>
+                <h2 class="text-dark-emphasis mt-3">Реальные проекты для реальных клиентов</h2>
+                <p class="text-dark-emphasis mt-3">Каждый сайт — это решение конкретной бизнес-задачи, реализованное с учётом целей, аудитории и трендов. Здесь — не просто портфолио, а живые кейсы, в которых идеи превращаются в эффективные цифровые продукты, а эффективные цифровые продукты - в измеримые результаты: рост трафика, увеличение конверсий и лояльность пользователей.</p>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="https://placehold.jp/b8b8b8/828282/1920x1080.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://placehold.jp/8f8f8f/6b6b6b/1920x1080.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://placehold.jp/757575/a6a6a6/1920x1080.png" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
             </section>
 
             <!-- Секция 3 с якорем -->
-            <section id="contacts" class="contacts">
-                <h2 class="contacts__title">Контактная информация</h2>
-                <p class="contacts__desc">Наши контакты...</p>
-                <a href="src/contacts.html" class="contacts__link">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+            <section id="contacts" class="text-center bg-body-emphasis mt-5">
+                <h1 class="contacts__title">Контактная информация</h2>
+                <h2 class="text-dark-emphasis mt-3">Понравились наши проекты?</h2>
+                <p class="text-dark-emphasis mt-3">Давайте поговорим! Чтобы обсудить Ваш уникальный кейс, получить индивидуальную консультацию или заказать проект — просто напишите нам на почту или позвоните одному из наших менеджеров.</p>
+                <a href="src/contacts.html" class="btn btn-outline-primary">Подробнее</a> <!-- Ссылка на отдельную страницу -->
             </section>
         </div>
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <footer class="mt-5 p-5 text-center text-secondary border-top">
         <div class="container">
             <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
             <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
