@@ -19,22 +19,24 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
+        <header class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="header__logo col-md-3 mb-2 mb-md-0">
                 <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
                     <img src="./assets/favicon.ico" width=50px height=50px>
                 </a>
             </div>
             
             <!-- Главное навигационное меню -->
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="./index.html" class="nav-link px-2 link-secondary disabled">Главная</a></li>
-                <li><a href="./src/about.html" class="nav-link px-2">О нас</a></li>
-                <li><a href="./src/contacts.html" class="nav-link px-2">Контакты</a></li>
-                <li><a href="./src/feedback.html" class="nav-link px-2">Обратная связь</a></li>
-            </ul>
+            <nav class="header__nav">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./index.html" class="nav-link px-2 link-secondary disabled">Главная</a></li>
+                    <li><a href="./src/about.html" class="nav-link px-2">О нас</a></li>
+                    <li><a href="./src/contacts.html" class="nav-link px-2">Контакты</a></li>
+                    <li><a href="./src/feedback.html" class="nav-link px-2">Обратная связь</a></li>
+                </ul>
+            </nav>
         
-            <div class="col-md-3 text-end">
+            <div class="header__account col-md-3 text-end">
                 <button type="button" class="btn btn-outline-primary my-1">Войти</button>
                 <button type="button" class="btn btn-primary">Регистрация</button>
             </div>
@@ -43,22 +45,22 @@
 
     <!-- Уникальное основное содержимое страницы -->
     <main class="main">
-        <div class="container">
+        <div class="container-sm">
             
             <!-- Секция 1 с якорем -->
-            <section class="text-center bg-body-tertiary rounded-3 border py-5">
-                <h1>Добро пожаловать на наш сайт!</h1>
-                <h2 class="text-dark-emphasis mt-3">Наши услуги</h2>
-                <p class="text-dark-emphasis">Мы предоставляем услуги разработки сайтов с полного нуля до развёртки сайта с использованием самых современных технологий.</p>
+            <section class="welcome text-center bg-body-tertiary rounded-3 border py-5">
+                <h1 class="welcome__title">Добро пожаловать на наш сайт!</h1>
+                <h2 class="welcome__subtitle text-dark-emphasis mt-3">Наши услуги</h2>
+                <p class="welcome__description text-dark-emphasis">Мы предоставляем услуги разработки сайтов с полного нуля до развёртки сайта с использованием самых современных технологий.</p>
                 <!-- Якорная ссылка внутри страницы -->
                 <a href="#contacts" class="btn btn-outline-primary">Связаться с нами</a>
             </section>
 
             <!-- Секция 2 с якорем -->
-            <section class="text-center bg-body-emphasis mt-5">
-                <h1>Портфолио</h1>
-                <h2 class="text-dark-emphasis mt-3">Реальные проекты для реальных клиентов</h2>
-                <p class="text-dark-emphasis mt-3">Каждый сайт — это решение конкретной бизнес-задачи, реализованное с учётом целей, аудитории и трендов. Здесь — не просто портфолио, а живые кейсы, в которых идеи превращаются в эффективные цифровые продукты, а эффективные цифровые продукты - в измеримые результаты: рост трафика, увеличение конверсий и лояльность пользователей.</p>
+            <section class="portfolio text-center bg-body-emphasis mt-5">
+                <h1 class="portfolio__title">Портфолио</h1>
+                <h2 class="portfolio__subtitle text-dark-emphasis mt-3">Реальные проекты для реальных клиентов</h2>
+                <p class="portfolio__description text-dark-emphasis mt-3">Каждый сайт — это решение конкретной бизнес-задачи, реализованное с учётом целей, аудитории и трендов. Здесь — не просто портфолио, а живые кейсы, в которых идеи превращаются в эффективные цифровые продукты, а эффективные цифровые продукты - в измеримые результаты: рост трафика, увеличение конверсий и лояльность пользователей.</p>
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -88,21 +90,21 @@
             </section>
 
             <!-- Секция 3 с якорем -->
-            <section id="contacts" class="text-center bg-body-emphasis mt-5">
+            <section id="contacts" class="contacts text-center bg-body-emphasis mt-5">
                 <h1 class="contacts__title">Контактная информация</h2>
-                <h2 class="text-dark-emphasis mt-3">Понравились наши проекты?</h2>
-                <p class="text-dark-emphasis mt-3">Давайте поговорим! Чтобы обсудить Ваш уникальный кейс, получить индивидуальную консультацию или заказать проект — просто напишите нам на почту или позвоните одному из наших менеджеров.</p>
-                <a href="src/contacts.html" class="btn btn-outline-primary">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+                <h2 class="contacts__subtitle text-dark-emphasis mt-3">Понравились наши проекты?</h2>
+                <p class="contacts__description text-dark-emphasis mt-3">Давайте поговорим! Чтобы обсудить Ваш уникальный кейс, получить индивидуальную консультацию или заказать проект — просто напишите нам на почту или позвоните одному из наших менеджеров.</p>
+                <a href="src/contacts.html" class="contacts__link btn btn-outline-primary">Подробнее</a> <!-- Ссылка на отдельную страницу -->
             </section>
         </div>
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="mt-5 p-5 text-center text-secondary border-top">
-        <div class="container">
+    <footer class="footer mt-5 p-5 text-center text-secondary border-top">
+        <div class="container-sm">
             <p class="footer__copy">&copy; 2023 SiteFactory. Все права защищены.</p>
             <p class="footer__phone">Телефон: +7 (123) 456-78-90</p>
-            <a href="https://www.flaticon.com/ru/free-icons/" title="фабрика иконки">Иконка сайта взята от srip - Flaticon</a>
+            <a href="https://www.flaticon.com/ru/free-icons/" class="footer__icon-link" title="фабрика иконки">Иконка сайта взята от srip - Flaticon</a>
         </div>
     </footer>
 </body>
