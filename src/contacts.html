@@ -42,7 +42,7 @@
         </header>
     </div>
 
-    <main class="main">
+    <main class="main" style="min-height: 72vh;">
         <div class="container">
             <!-- Простые "хлебные крошки" -->
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -52,39 +52,51 @@
                 </ol>
             </nav>
 
-            <h1 class="main__title">Наши контакты</h1>
+            <h1 class="main__title text-center">Наши контакты</h1>
             
-            <div class="main__contacts">
-                <section class="questions-contacts">
-                    <h2 class="main__qcontacts">Контакты для вопросов</h2>
-                    <p>Менеджер по вопросам #1 - 7 (732) 408-00-93</p>
-                    <p>Менеджер по вопросам #2 - 7 (941) 227-75-87</p>
-                </section>
-
-                <section class="suggestions-contacts">
-                    <h2 class="main__scontacts">Контакты для предложений</h2>
-                    <p>Менеджер по предложениям #1 - 7 (390) 184-28-78</p>
-                </section>
-
-                <section class="order-contacts">
-                    <h2 class="main__scontacts">Контакты для оформления заказа</h2>
-                    <p>Менеджер по заказам #1 - 7 (212) 334-12-16</p>
-                    <p>Менеджер по заказам #2 - 7 (139) 090-52-27</p>
-                </section>
-
-                <section class="partners-contacts">
-                    <h2 class="main__scontacts">Контакты для сотрудничества</h2>
-                    <p>Менеджер по партнёрству #1 - 7 (651) 955-94-68</p>
-                    <p>Менеджер по партнёрству #2 - 7 (108) 804-94-48</p>
-                    <p>Менеджер по партнёрству #3 - 7 (234) 334-98-53</p>
-                    <p>Менеджер по партнёрству #4 - 7 (139) 090-52-27</p>
-                </section>
+            <div class="main__contacts text-center">
+                <div class="row mb-3">
+                    <div class="col">
+                        <section class="questions-contacts bg-body-tertiary border rounded-3 p-5 mt-5" style="min-width: 600px; min-height: 300px;">
+                            <h2 class="main__qcontacts">Контакты для вопросов</h2>
+                            <p>Менеджер по вопросам #1 - 7 (732) 408-00-93</p>
+                            <p>Менеджер по вопросам #2 - 7 (941) 227-75-87</p>
+                        </section>
+                    </div>
+                    
+                    <div class="col">
+                        <section class="suggestions-contacts bg-body-tertiary border rounded-3 p-5 mt-5" style="min-width: 600px; min-height: 300px;">
+                            <h2 class="main__scontacts">Контакты для предложений</h2>
+                            <p>Менеджер по предложениям #1 - 7 (390) 184-28-78</p>
+                        </section>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <section class="order-contacts bg-body-tertiary border rounded-3 p-5 mt-5" style="min-width: 600px; min-height: 300px;">
+                            <h2 class="main__scontacts">Контакты для оформления заказа</h2>
+                            <p>Менеджер по заказам #1 - 7 (212) 334-12-16</p>
+                            <p>Менеджер по заказам #2 - 7 (139) 090-52-27</p>
+                        </section>
+                    </div>
+                    
+                    <div class="col">
+                        <section class="partners-contacts bg-body-tertiary border rounded-3 p-5 mt-5" style="min-width: 600px; min-height: 300px;">
+                            <h2 class="main__scontacts">Контакты для сотрудничества</h2>
+                            <p>Менеджер по партнёрству #1 - 7 (651) 955-94-68</p>
+                            <p>Менеджер по партнёрству #2 - 7 (108) 804-94-48</p>
+                            <p>Менеджер по партнёрству #3 - 7 (234) 334-98-53</p>
+                            <p>Менеджер по партнёрству #4 - 7 (139) 090-52-27</p>
+                        </section>
+                    </div>
+                </div>
             </div>
 
-            <h1>Хотите оставить отзыв?</h1>
-            <section class="feedback-contacts">
+            <h1 class="main__feedback text-center mt-5">Хотите оставить отзыв?</h1>
+            <section class="feedback-contacts text-center mt-3">
                 <a href="feedback.html" class="feedback-contacts__link">Напишите нам на почту!</a>
-                <p class="feedback-contacts__desc">Мы рады любой обратной связи!</p>
+                <p class="feedback-contacts__desc text-dark-emphasis">Мы рады любой обратной связи!</p>
             </section>
         </div>
     </main>
