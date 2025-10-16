@@ -1,17 +1,8 @@
 const dlg = document.getElementById('contact-dialog');
-const openBtn = document.getElementById('feedback__open-dialog');
-const closeBtn = document.getElementById('form-actions__close-dialog');
+const submitBtn = document.querySelector('.submit')
 const form = document.getElementById('contact-form');
-const phone = document.getElementById('phone'); 
+const phone = document.getElementById('phone');
 let lastActive = null;
-
-openBtn.addEventListener('click', () => {
-    lastActive = document.activeElement;
-    dlg.showModal(); // Модальный режим + затемнение
-    dlg.querySelector('input,select,textarea,button'?.focus());
-});
-
-closeBtn.addEventListener('click', () => dlg.close('cancel'));
 
 phone?.addEventListener('input', () => { 
     const digits = phone.value.replace(/\D/g, '').slice(0,11); // Можно ввести номер исключительно до 11 цифр 
@@ -27,7 +18,7 @@ phone?.addEventListener('input', () => {
     phone.value = parts.join(''); 
 });
 
-form?.addEventListener('submit', (e) => {
+submitBtn?.addEventListener('click', (e) => {
     // Сброс кастомных сообщений
     [...form.elements].forEach(el => el.setCustomValidity?.(''));
 
@@ -51,9 +42,8 @@ form?.addEventListener('submit', (e) => {
     }
 
     // Успешная отправка формы
+    const modal = bootstrap.Modal.getInstance(document.getElementById('contact-dialog'));
     e.preventDefault();
-    document.getElementById('contact-form')?.close('success');
+    modal.hide();
     form.reset();
 });
-
-dlg.addEventListener('close', () => { lastActive?.focus(); }); // закрытие <dialog>
