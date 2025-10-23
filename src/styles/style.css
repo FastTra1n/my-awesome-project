@@ -6,3 +6,13 @@ main {
     min-width: 600px;
     min-height: 300px;
 }
+
+.form-control[type="text"]:invalid:focus,
+.form-control[type="email"]:invalid:focus,
+.form-control[type="tel"]:invalid:focus,
+.form-control[id="topic"]:invalid:focus,
+.form-control[id="message"]:invalid:focus {
+    color: rgb(200, 0, 0);
+    border-color: rgb(200, 0, 0);
+    box-shadow: 0 1px 1px rgb(200, 0, 0, 0.075) inset, 0 0 8px rgb(200, 0, 0, 0.6);
+}
